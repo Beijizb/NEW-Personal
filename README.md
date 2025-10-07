@@ -1,6 +1,40 @@
 # 极客风个人主页
 
+Indie developer building a minimalist, hacker‑style personal homepage. Zero‑dependency static site ready for one‑click deployment to Cloudflare Pages or Netlify.
+
 一个零依赖、可直接部署到静态托管（Cloudflare Pages / Netlify）的极客风个人主页。
+
+## Features (EN)
+
+- Minimal, fast, and privacy‑friendly static site (no build, no tracking)
+- Hacker/geek‑style design with keyboard‑like monospace aesthetics
+- Dark/Light theme toggle with local preference persistence
+- i18n ready: English/Chinese switch, content driven by `data-i18n`
+- Quick‑access links section for daily navigation (customizable)
+- Accessible HTML structure (skip links, focus states, ARIA labels)
+- One‑click deploy to Netlify; zero‑config deploy to Cloudflare Pages
+
+## Tech Stack (EN)
+
+- Pure HTML + CSS + Vanilla JS (no frameworks, no dependencies)
+- Edge‑hosting friendly, works on Netlify/Cloudflare Pages out of the box
+- Security headers via Netlify `_headers` / `netlify.toml`
+
+## Why apply for Open‑Source plan (EN)
+
+- Provide a free, fast starter for indie developers to publish personal pages
+- Demo and documentation hosting to lower onboarding costs for newcomers
+- Keep the project ad‑free and privacy‑friendly for the community
+
+## Links for application reviewers (EN)
+
+- Code of Conduct: `CODE_OF_CONDUCT.md`
+- License: `LICENSE` (MIT)
+- Contributing Guide: `CONTRIBUTING.md`
+- Netlify one‑click deploy: see section “部署到 Netlify”
+- Proof of contributors: GitHub Contributors page of the repository
+
+> Tip: After pushing to GitHub, the contributors page is available at: `https://github.com/Beijizb/NEW/graphs/contributors`
 
 ## 本地预览
 
@@ -61,6 +95,16 @@ netlify deploy --dir=. --prod
 - 贡献指南：见 `CONTRIBUTING.md`
 - 行为准则：见 `CODE_OF_CONDUCT.md`
 
+## Contact (EN)
+
+- Maintainer: Indie developer
+- Issues/Requests: GitHub Issues of this repository
+- Deploy help: open an issue with your Netlify/Cloudflare setup details
+
 ## 许可
 
 MIT
+
+---
+
+[![This site is powered by Netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com)
