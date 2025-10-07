@@ -34,7 +34,7 @@ Indie developer building a minimalist, hacker‑style personal homepage. Zero‑
 - Netlify one‑click deploy: see section “部署到 Netlify”
 - Proof of contributors: GitHub Contributors page of the repository
 
-> Tip: After pushing to GitHub, the contributors page is available at: `https://github.com/Beijizb/NEW/graphs/contributors`
+> Tip: After pushing to GitHub, the contributors page is available at: `https://github.com/Beijizb/NEW-Personal/graphs/contributors`
 
 ## 本地预览
 
@@ -65,7 +65,7 @@ npx --yes http-server -p 8080 .
 
 - 一键部署：
 
-[![一键部署到 Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Beijizb/NEW)
+[![一键部署到 Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Beijizb/NEW-Personal)
 
 - 方式 A：拖拽上传
   1. 登录 Netlify → Sites → Add new site → Deploy manually。
