@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>极客 · 个人主页</title>
+    <meta name="description" content="极客风个人主页：项目、文章与联系方式">
+    <meta name="theme-color" content="#0f0">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <meta property="og:title" content="极客 · 个人主页">
+    <meta property="og:description" content="极客风个人主页：项目、文章与联系方式">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/avatar.svg">
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="a11y.skip">Skip to content</a>
+    <header class="site-header">
+      <div class="brand">
+        <img src="/assets/avatar.svg" alt="avatar" class="avatar" width="40" height="40">
+        <span class="logo">geek<span class="cursor">_</span></span>
+      </div>
+      <nav class="nav">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#posts" data-i18n="nav.posts">Posts</a>
+        <a href="#links" data-i18n="nav.links">Links</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button id="langToggle" title="Language" aria-label="Language">🌐 EN</button>
+        <button id="themeToggle" title="Theme" aria-label="Theme">🌓</button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <h1 id="heroTitle" data-i18n="hero.title">Hi, I'm <span class="accent">Geek</span></h1>
+        <p class="subtitle" id="typewriter" aria-live="polite" data-i18n="hero.subtitle">Write code, love open-source, explore performance and security.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects" data-i18n="cta.viewProjects">View Projects</a>
+          <a class="btn" href="#contact" data-i18n="cta.contactMe">Contact Me</a>
+        </div>
+        <div class="terminal" role="region" aria-label="Terminal">
+<pre><code>$ whoami
+&gt; geek
+$ stack
+&gt; web · systems · perf · sec
+$ motto
+&gt; keep it simple, make it fast</code></pre>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2 data-i18n="about.title">About</h2>
+        <p data-i18n="about.desc">Full‑stack developer who loves low‑level implementation and engineering efficiency. Focused on web performance, observability, and DX.</p>
+        <ul class="badges">
+          <li>TypeScript</li>
+          <li>Rust</li>
+          <li>Node.js</li>
+          <li>Edge Runtime</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 data-i18n="projects.title">Projects</h2>
+        <div class="grid">
+          <article class="card" tabindex="0">
+            <h3>FastView</h3>
+            <p data-i18n="projects.fastview">Ultra‑light image preview component with lazy‑load and gestures.</p>
+            <div class="meta">
+              <span>TypeScript</span>
+              <a href="#" aria-label="FastView" data-i18n="projects.repo">Repo</a>
+            </div>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>EdgeAuth</h3>
+            <p data-i18n="projects.edgeauth">Stateless auth middleware powered by edge runtime.</p>
+            <div class="meta">
+              <span>Rust</span>
+              <a href="#" aria-label="EdgeAuth" data-i18n="projects.repo">Repo</a>
+            </div>
+          </article>
+          <article class="card" tabindex="0">
+            <h3>PerfKit</h3>
+            <p data-i18n="projects.perfkit">RUM‑oriented performance collection and visualization toolkit.</p>
+            <div class="meta">
+              <span>Web</span>
+              <a href="#" aria-label="PerfKit" data-i18n="projects.repo">Repo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="posts" class="section">
+        <h2 data-i18n="posts.title">Posts</h2>
+        <ul class="list">
+          <li><a href="#">Service Worker for graceful offline fallback</a></li>
+          <li><a href="#">10 subtle performance optimization details</a></li>
+          <li><a href="#">Implementing a minimal event loop from scratch</a></li>
+        </ul>
+      </section>
+
+      <section id="links" class="section">
+        <h2 data-i18n="links.title">Useful Links</h2>
+        <div class="grid">
+          <a class="card" href="https://www.google.com" target="_blank" rel="noreferrer">
+            <h3>Google</h3>
+            <p data-i18n="links.search">Search engine</p>
+          </a>
+          <a class="card" href="https://github.com" target="_blank" rel="noreferrer">
+            <h3>GitHub</h3>
+            <p data-i18n="links.github">Code hosting</p>
+          </a>
+          <a class="card" href="https://stackoverflow.com" target="_blank" rel="noreferrer">
+            <h3>Stack Overflow</h3>
+            <p data-i18n="links.so">Programming Q&A</p>
+          </a>
+          <a class="card" href="https://developer.mozilla.org" target="_blank" rel="noreferrer">
+            <h3>MDN</h3>
+            <p data-i18n="links.mdn">Web docs</p>
+          </a>
+          <a class="card" href="https://chat.openai.com" target="_blank" rel="noreferrer">
+            <h3>ChatGPT</h3>
+            <p data-i18n="links.chatgpt">AI assistant</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <div class="contact">
+          <button id="copyEmail" class="btn" data-email="hi@example.com" data-i18n="contact.copy">Copy email</button>
+          <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://twitter.com/" target="_blank" rel="noreferrer">X/Twitter</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Geek</span>
+      <span class="sep">/</span>
+      <a href="/" aria-label="Back to top" data-i18n="footer.top">Back to top ↑</a>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+  </html>
