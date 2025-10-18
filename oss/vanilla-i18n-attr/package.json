@@ -1,0 +1,39 @@
+{
+  "name": "vanilla-i18n-attr",
+  "version": "0.1.0",
+  "description": "Zero-dependency vanilla JS i18n via data attributes",
+  "type": "module",
+  "license": "MIT",
+  "main": "dist/vanilla-i18n-attr.js",
+  "module": "src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "default": "./dist/vanilla-i18n-attr.js"
+    },
+    "./dist": "./dist/vanilla-i18n-attr.js",
+    "./dist/vanilla-i18n-attr.js": "./dist/vanilla-i18n-attr.js",
+    "./dist/vanilla-i18n-attr.min.js": "./dist/vanilla-i18n-attr.min.js"
+  },
+  "unpkg": "dist/vanilla-i18n-attr.min.js",
+  "jsdelivr": "dist/vanilla-i18n-attr.min.js",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "src",
+    "locales",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "dev": "python3 -m http.server 4173 --directory demo"
+  },
+  "keywords": [
+    "i18n",
+    "vanilla-js",
+    "data-attributes",
+    "localization",
+    "oss"
+  ]
+}

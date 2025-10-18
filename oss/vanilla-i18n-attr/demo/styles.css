@@ -1,0 +1,251 @@
+:root {
+  color-scheme: dark;
+  --bg: #050506;
+  --surface: #101018;
+  --border: #1f1f2b;
+  --text: #f8f8f2;
+  --muted: #a0a0b8;
+  --accent: #00f2ff;
+  --accent-muted: rgba(0, 242, 255, 0.12);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0d0d17 0%, var(--bg) 55%);
+  color: var(--text);
+  padding: 3rem clamp(1.5rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+body[data-dir='rtl'] {
+  direction: rtl;
+}
+
+h1,
+ h2,
+ h3 {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+p,
+ span,
+ small,
+ li {
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+code {
+  font-family: inherit;
+  background: #161624;
+  border-radius: 6px;
+  padding: 0.15rem 0.35rem;
+  color: var(--accent);
+  font-size: 0.95em;
+}
+
+.surface {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  padding: clamp(1.5rem, 2vw, 2rem);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.site-header .badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: var(--accent-muted);
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.subtitle {
+  margin: 0.75rem 0 0;
+}
+
+.locale-switch {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.chip {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.chip:hover,
+ .chip:focus-visible {
+  background: var(--accent-muted);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.chip[data-active='true'] {
+  background: var(--accent);
+  color: #020204;
+  box-shadow: 0 6px 18px rgba(0, 242, 255, 0.3);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero {
+  text-align: left;
+  border-radius: var(--radius-lg);
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type='text'] {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  padding: 0.6rem 0.9rem;
+  font-family: inherit;
+}
+
+input[type='text']:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 242, 255, 0.25);
+}
+
+.output {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text);
+}
+
+.cluster {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cluster .status {
+  min-height: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.cluster .hint {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.spawn-zone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.spawn-zone .spawn-card {
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+}
+
+.doc .columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.doc h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.doc ul {
+  padding-left: 1.2rem;
+  margin: 0.75rem 0 0;
+}
+
+.doc li {
+  margin-bottom: 0.5rem;
+}
+
+.iife iframe {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  min-height: 320px;
+  background: #111;
+}
+
+.site-footer {
+  text-align: center;
+  color: var(--muted);
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 2rem 1rem;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .locale-switch {
+    justify-content: center;
+  }
+}

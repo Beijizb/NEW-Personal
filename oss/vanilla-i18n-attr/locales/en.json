@@ -1,0 +1,59 @@
+{
+  "app": {
+    "name": "vanilla-i18n-attr",
+    "description": "Zero-dependency i18n for HTML via data attributes"
+  },
+  "demo": {
+    "hero": {
+      "heading": "Translate static sites in seconds",
+      "subheading": "Switch languages, persist preferences, and keep markup declarative."
+    },
+    "actions": {
+      "switch_en": "English",
+      "switch_zh": "中文",
+      "switch_ar": "RTL preview"
+    },
+    "fallback": {
+      "title": "Fallback behaviour",
+      "description": "When a key is missing in the active locale, the library walks the fallback chain before leaving the original text untouched."
+    },
+    "attributes": {
+      "title": "Attribute translations",
+      "description": "Use data-i18n-attr to translate title, placeholder, aria-label, and any attribute you need."
+    },
+    "type": {
+      "label": "Template variables",
+      "description": "Interpolation works with {count} style placeholders.",
+      "example": "Hello, {name}!"
+    }
+  },
+  "forms": {
+    "name": "Your name",
+    "placeholder": "Enter your name"
+  },
+  "tooltips": {
+    "copy": "Copy email to clipboard"
+  },
+  "buttons": {
+    "copy": "Copy email",
+    "load_ar": "Arabic (RTL simulated)"
+  },
+  "notices": {
+    "rtl_hint": "RTL mode sets dir=\"rtl\" on the <html> element and toggles body[data-dir]."
+  },
+  "api": {
+    "quick_start": "Quick start",
+    "usage": "Usage",
+    "options": "Options",
+    "fallbacks": "Fallback chain"
+  },
+  "missing": {
+    "demo": "This key only exists in English to show the fallback."
+  },
+  "messages": {
+    "greet": "Hello, {name}!",
+    "copy_success": "Email copied!",
+    "copy_error": "Copy failed",
+    "clipboard_unavailable": "Clipboard unavailable"
+  }
+}
