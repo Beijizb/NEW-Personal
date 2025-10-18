@@ -162,11 +162,9 @@ npm run build
 - No external dependencies.
 - JSON dictionaries are fetched relative to `basePath`; host on the same origin for tight CSP policies.
 
-## Netlify deployment · Netlify 部署
+## Deployment · 部署
 
-- **Base directory:** `oss/vanilla-i18n-attr`
-- **Publish directory:** `demo`
-- [`netlify.toml`](netlify.toml) sets security headers and a self-only CSP for scripts/styles.
+For detailed, step-by-step guides on deploying to Netlify, Cloudflare Pages, GitHub Pages, and for local previews, please see the [**Deployment Guide (DEPLOY.md)**](DEPLOY.md).
 
 ## License · 许可证
 
