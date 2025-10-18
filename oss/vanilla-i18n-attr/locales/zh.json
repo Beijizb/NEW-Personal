@@ -1,0 +1,56 @@
+{
+  "app": {
+    "name": "vanilla-i18n-attr",
+    "description": "零依赖的数据属性国际化工具"
+  },
+  "demo": {
+    "hero": {
+      "heading": "几秒内切换静态站语言",
+      "subheading": "切换语言、记住偏好，并保持语义化标记。"
+    },
+    "actions": {
+      "switch_en": "English",
+      "switch_zh": "中文",
+      "switch_ar": "RTL 预览"
+    },
+    "fallback": {
+      "title": "回退行为",
+      "description": "当当前语言缺失时，库会按回退链查找，最后保留原文。"
+    },
+    "attributes": {
+      "title": "属性翻译",
+      "description": "通过 data-i18n-attr 翻译 title、placeholder、aria-label 等属性。"
+    },
+    "type": {
+      "label": "模板变量",
+      "description": "使用 {count} 风格的占位符进行插值。",
+      "example": "你好，{name}!"
+    }
+  },
+  "forms": {
+    "name": "你的名字",
+    "placeholder": "请输入姓名"
+  },
+  "tooltips": {
+    "copy": "复制邮箱"
+  },
+  "buttons": {
+    "copy": "复制邮箱",
+    "load_ar": "阿语（RTL 模式）"
+  },
+  "notices": {
+    "rtl_hint": "RTL 模式会在 <html> 上设置 dir=\"rtl\"，并更新 body[data-dir]。"
+  },
+  "api": {
+    "quick_start": "快速开始",
+    "usage": "用法",
+    "options": "配置",
+    "fallbacks": "回退链"
+  },
+  "messages": {
+    "greet": "你好，{name}!",
+    "copy_success": "邮箱已复制！",
+    "copy_error": "复制失败",
+    "clipboard_unavailable": "剪贴板不可用"
+  }
+}
